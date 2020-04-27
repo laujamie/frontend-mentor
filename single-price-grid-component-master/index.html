@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: "Karla", sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        margin-bottom: 0.5em;
+      }
+      .hero {
+        padding: 2em 3em;
+      }
+      .hero__header {
+        font-size: 1.5em;
+        color: hsl(179, 62%, 43%);
+        display: block;
+        margin-bottom: 0.8em;
+        font-weight: bold;
+      }
+      .hero__subheader {
+        font-size: 1em;
+        color: hsl(71, 73%, 54%);
+        display: block;
+        margin: 0.5em 0;
+      }
+      .hero__text {
+        font-size: 1em;
+        color: hsl(218, 22%, 67%);
+        display: block;
+        margin-bottom: 0.3em;
+      }
+      .pricing {
+        background: hsl(179, 62%, 43%);
+        color: hsl(204, 43%, 93%);
+        padding: 2em 3em;
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+        margin: 0;
+        height: 300px;
+      }
+      .why-us {
+        background: hsl(179, 62%, 58%);
+        color: hsl(204, 43%, 93%);
+        padding: 2em 3em;
+        width: 50%;
+        box-sizing: border-box;
+        float: right;
+        margin: 0;
+        height: 300px;
+      }
+      .why-us__header,
+      .pricing__header {
+        font-size: 1.5em;
+        display: block;
+        margin-bottom: 0.8em;
+        font-weight: bold;
+      }
+      .pricing__price {
+        font-size: 1.5em;
+      }
+      a.sign-up {
+        text-decoration: none;
+        color: white;
+        background: hsl(71, 73%, 54%);
+        padding: 1em 2em;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        display: block;
+      }
+      .why-us__list {
+        color: hsl(204, 43%, 93%);
+      }
+      .row {
+        overflow: auto;
+      }
+      @media only screen and (max-width: 700px) {
+        .pricing {
+          width: 100%;
+          float: none;
+          height: auto;
+          padding: 1.5em 1.5em;
+        }
+        .why-us {
+          width: 100%;
+          float: none;
+          height: auto;
+          padding: 1.5em 1.5em;
+        }
+        .hero {
+          padding: 1.5em 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <span class="hero__header">Join our community</span>
+        <span class="hero__subheader"
+          >30-day, hassle-free money back guarantee</span
+        >
+        <span class="hero__text">
+          Gain access to our full library of tutorials along with expert code
+          reviews.
+        </span>
+        <span class="hero__text">
+          Perfect for any developers who are serious about honing their skills.
+        </span>
+      </div>
+      <div class="row">
+        <div class="pricing">
+          <span class="pricing__header">Monthly Subscription</span>
+          <h3>
+            <span class="pricing__price">&dollar;29</span>
+            <span class="pricing__sub">per month</span>
+          </h3>
+          <p>Full access for less than &dollar;1 a day</p>
+          <span class="pricing__link">
+            <a href="#" class="sign-up">Sign Up</a>
+          </span>
+        </div>
+        <div class="why-us">
+          <span class="why-us__header">
+            Why Us
+          </span>
+          <span class="why-us__list">
+            <ul>
+              <li>Tutorials by industry experts</li>
+              <li>Peer &amp; expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHub repos</li>
+              <li>Community forum</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/laujamie">@laujamie</a>.
+      </p>
+    </footer>
+  </body>
+</html>
