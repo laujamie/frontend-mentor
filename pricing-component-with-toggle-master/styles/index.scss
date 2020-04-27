@@ -1,0 +1,67 @@
+@import 'variables.scss';
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background: $grayish-blue-100;
+  text-align: center;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-top {
+  top: 0;
+  right: 0;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    top: -7rem;
+    right: -7rem;
+  }
+}
+
+.bg-bottom {
+  left: 0;
+  bottom: 0;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    left: -7rem;
+    bottom: -7rem;
+  }
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
