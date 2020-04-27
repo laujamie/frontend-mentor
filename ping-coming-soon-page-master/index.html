@@ -30,10 +30,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="styles/styles.scss" />
-    <script src="https://use.fontawesome.com/060d1b8bcb"></script>
+    <script
+      src="https://kit.fontawesome.com/fe7d33d927.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <img src="images/logo.svg" alt="" />
+    <img src="images/logo.svg" alt="" class="logo" />
     <div class="container">
       <div class="container__header">
         We are launching <span class="header--em">soon!</span>
@@ -43,14 +46,16 @@
 
     <div class="container container--form">
       <form>
-        <input
-          class="form__email"
-          type="email"
-          placeholder="Your email address..."
-        />
-        <button class="form__button">
-          Notify Me
-        </button>
+        <div class="form-group">
+          <input
+            class="form__email"
+            type="email"
+            placeholder="Your email address..."
+          />
+          <button class="form__button">
+            Notify Me
+          </button>
+        </div>
       </form>
     </div>
 
@@ -59,6 +64,24 @@
       src="images/illustration-dashboard.png"
       alt="dashboard image"
     />
+
+    <div class="container icons">
+      <div class="icons__button">
+        <a href="#" class="icon__link"
+          ><i class="fab fa-facebook-f icon fa-xs"></i
+        ></a>
+      </div>
+      <div class="icons__button">
+        <a href="#" class="icon__link"
+          ><i class="fab fa-twitter icon fa-xs"></i
+        ></a>
+      </div>
+      <div class="icons__button">
+        <a href="#" class="icon__link"
+          ><i class="fab fa-instagram icon fa-xs"></i>
+        </a>
+      </div>
+    </div>
 
     <div class="footer">&copy; Copyright Ping. All rights reserved.</div>
 

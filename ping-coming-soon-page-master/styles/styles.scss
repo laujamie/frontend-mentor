@@ -10,24 +10,39 @@
 body {
   font-family: 'Libre Franklin', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 1em;
   font-size: 20px;
   text-align: center;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  margin-top: 5rem;
 }
 
 .container {
-  margin: 1rem;
+  margin: 2rem 0;
 }
 
 .container__header {
   font-weight: 300;
   color: $neutral-gray;
-  font-size: 2.5rem;
+  font-size: 1.625rem;
+
+  @media only screen and (min-width: $breakpoint-sm) {
+    font-size: 2.5rem;
+  }
 }
 
 .container__subheader {
   margin-top: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
+
+  @media only screen and (min-width: $breakpoint-sm) {
+    font-size: 1.125rem;
+  }
 }
 
 .header--em {
@@ -39,24 +54,92 @@ body {
   color: $neutral-blue;
 }
 
+.form__email {
+  border-radius: 500px;
+  padding: 1rem 2em;
+  border-style: solid;
+  border-color: $secondary-blue;
+  color: $secondary-blue;
+  font-family: inherit;
+  border-width: 0.5px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:invalid {
+    border-color: $secondary-red;
+  }
+
+  @media only screen and (min-width: $breakpoint-sm) {
+    width: 30%;
+  }
+}
+
 .form__button {
   background: $primary;
   border: none;
   color: #fff;
   border-radius: 500px;
   padding: 1rem 2rem;
-  -webkit-box-shadow: 3px 3px 3px 3px $secondary-blue;
-  -moz-box-shadow: 3px 3px 3px 3px $secondary-blue;
-  box-shadow: 3px 3px 3px 3px $secondary-blue;
-}
-
-.dashboard {
-  max-width: 80%;
+  -webkit-box-shadow: 2px 2px 1px 1px $secondary-blue;
+  -moz-box-shadow: 2px 2px 1px 1px $secondary-blue;
+  box-shadow: 2px 2px 1px 1px $secondary-blue;
+  font-family: inherit;
+  width: 100%;
+  margin-left: 0;
   margin-top: 1rem;
 
   @media only screen and (min-width: $breakpoint-sm) {
-    max-width: 50%;
+    width: 6rem;
+    margin-left: 0.5rem;
+    margin-top: 0;
   }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  max-width: 100%;
+  margin-top: 3rem;
+
+  @media only screen and (min-width: $breakpoint-sm) {
+    max-width: 60%;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.icons__button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 1px solid $secondary-blue;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.icon__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  color: $primary;
 }
 
 .footer {
