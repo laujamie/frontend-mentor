@@ -1,0 +1,65 @@
+@import 'variables.scss';
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.container__header {
+  font-weight: 300;
+  color: $neutral-gray;
+  font-size: 2.5rem;
+}
+
+.container__subheader {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.header--em {
+  font-weight: 700;
+  color: black;
+}
+
+.container__subheader {
+  color: $neutral-blue;
+}
+
+.form__button {
+  background: $primary;
+  border: none;
+  color: #fff;
+  border-radius: 500px;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 3px 3px 3px 3px $secondary-blue;
+  -moz-box-shadow: 3px 3px 3px 3px $secondary-blue;
+  box-shadow: 3px 3px 3px 3px $secondary-blue;
+}
+
+.dashboard {
+  max-width: 80%;
+  margin-top: 1rem;
+
+  @media only screen and (min-width: $breakpoint-sm) {
+    max-width: 50%;
+  }
+}
+
+.footer {
+  color: $neutral-gray;
+  font-size: 0.75rem;
+}
